@@ -1,0 +1,20 @@
+load ./s_sparam.so
+verilog
+
+sparam_port #(.impedance(500)) p1(0 nout);
+sparam_port p2(0 nin);
+
+resistor #(.r(1)) rin(nin, nm)
+resistor #(.r(1)) rout(nm, nout)
+resistor #(.r(1)) rgnd(nm, 0)
+
+list
+
+print op v(nodes)
+op
+sp paramtype=z port p* 1 4 * 2
+sp paramtype=y port p* 1 4 * 2
+sp paramtype=s port p* 1 4 * 2
+
+
+end

@@ -1,0 +1,12 @@
+gnucap-sim
+
+Adding more simulation commands to gnucap
+
+- s-parameters
+- sensitivity
+- alternative dc analysis (-uf backport)
+- harmonic balance (not yet)
+- ...
+
+TODO: write this README file
+

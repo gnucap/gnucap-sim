@@ -1,0 +1,27 @@
+load ./s_sparam.so
+
+spice
+
+.verilog
+
+sparam_port #(.impedance(10)) p1(nin 0);
+sparam_port #(.impedance(10)) p2(nout 0);
+
+resistor #(.r(1)) rin(nin, nm)
+resistor #(.r(1)) rgi(nm, 0)
+
+resistor #(.r(1)) rout(nm, nout)
+capacitor #(.c(0.1)) rout(nin, nout)
+
+vcvs #(.gain(1)) e1(nc, 0, nin, 0)
+resistor #(.r(1)) rc(nc, nout)
+
+list
+
+op
+sp paramtype=s port p* 1 16 * 2
+//sp paramtype=s port p* 1 16 * 2
+//sp paramtype=s port p* 1 16 * 2
+
+
+end

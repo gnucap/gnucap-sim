@@ -1,0 +1,15 @@
+load ./s_sparam.so
+verilog
+
+sparam_port #(.impedance(50)) p1(0 1);
+sparam_port #(.impedance(100)) p2(0 1);
+resistor p3(0 1);
+sparam_port ww(0 1);
+
+list
+
+sparam paramtype=a
+
+sparam port p1 port p* port www 0 4 * 2
+
+end
