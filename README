@@ -8,5 +8,6 @@ Adding more simulation commands to gnucap
 - harmonic balance (not yet)
 - ...
 
-TODO: write this README file
+generally, "make check" builds and runs tests
 
+TODO: write this README file

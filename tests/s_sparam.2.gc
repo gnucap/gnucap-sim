@@ -1,4 +1,4 @@
-load ./s_sparam.so
+load s_sparam.so
 verilog
 
 sparam_port #(.impedance(500)) p1(0 nout);

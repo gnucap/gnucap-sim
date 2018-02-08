@@ -1,4 +1,4 @@
-load ./s_sparam.so
+load s_sparam.so
 
 spice
 
